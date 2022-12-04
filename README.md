@@ -5,7 +5,7 @@ Desafio de Front-end com apenas HTML e CSS proposto pela [giovannamoeller](https
 ## Dias Completos
 
 - [X] 1º Dia: Header
-- [ ] 2º Dia: Seção "Sobre nós"
+- [X] 2º Dia: Seção "Sobre nós"
 - [ ] 3º Dia: Seção "Métricas e resultados"
 - [ ] 4º Dia: Seção "Vagas Abertas - Parte 1"
 - [ ] 5º Dia: Seção "Vagas Abertas - Parte 2"

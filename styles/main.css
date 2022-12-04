@@ -34,31 +34,58 @@ header {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 24px 0;
+  padding: 24px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 780px) {
+  header {
+    justify-content: space-between;
+  }
 }
 header figure {
   width: 185px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
 }
 header figcaption {
-  font-size: 1.3rem;
+  font-size: max(1.3rem, 1.6vw);
   font-weight: 500;
   color: #3a404e;
 }
 header nav {
   width: 50%;
 }
+@media (max-width: 850px) {
+  header nav {
+    width: 46%;
+  }
+}
+@media (max-width: 780px) {
+  header nav {
+    display: none;
+  }
+}
 header nav ul {
   width: 55%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
+}
+@media (max-width: 1120px) {
+  header nav ul {
+    width: 80%;
+  }
+}
+@media (max-width: 850px) {
+  header nav ul {
+    width: 92%;
+  }
 }
 header nav li a {
   color: #667085;
@@ -79,6 +106,11 @@ header .btn-group {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 780px) {
+  header .btn-group {
+    width: auto;
+  }
+}
 header .btn-group button {
   width: 83px;
   height: 44px;
@@ -90,9 +122,49 @@ header .btn-group button {
 header .btn-group button:hover {
   cursor: pointer;
 }
+@media (max-width: 780px) {
+  header .btn-group .btn__login {
+    display: none;
+  }
+}
 header .btn-group .btn {
   width: 112px;
   border-radius: 8px;
   background-color: #8e2424;
   color: #ffffff;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+section.about {
+  height: 45vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+section.about span {
+  color: #8e2424;
+  font-weight: 500;
+  font-size: 1rem;
+}
+section.about h1 {
+  font-size: max(2.5rem, 3vw);
+  font-weight: 600;
+  color: #101828;
+}
+section.about p {
+  width: 72%;
+  font-size: max(1.2rem, 1.2vw);
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
