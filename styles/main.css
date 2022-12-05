@@ -29,6 +29,27 @@ img {
   max-width: 100%;
 }
 
+.box__metric {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.box__metric h2 {
+  color: #8e2424;
+  font-weight: 600;
+  font-size: max(3em, 3.8vw);
+}
+.box__metric h3 {
+  color: #101828;
+  font-weight: 500;
+  font-size: 18px;
+}
+.box__metric p {
+  font-size: max(1rem, 1vw);
+  font-weight: 400;
+}
+
 header {
   width: 100%;
   height: -webkit-max-content;
@@ -159,12 +180,22 @@ section.about span {
   font-size: 1rem;
 }
 section.about h1 {
-  font-size: max(2.5rem, 3vw);
+  font-size: min(2rem, 5vw);
   font-weight: 600;
   color: #101828;
 }
 section.about p {
   width: 72%;
-  font-size: max(1.2rem, 1.2vw);
+  font-size: min(1.2rem, 3vw);
   font-weight: 400;
+}
+
+section.metrics {
+  width: 90%;
+  padding: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
 }/*# sourceMappingURL=main.css.map */

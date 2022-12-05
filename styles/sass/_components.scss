@@ -1,0 +1,23 @@
+.box__metric {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	h2 {
+		color: $color-main;
+		font-weight: $weight-semibold;
+		font-size: max(3em, 3.8vw);
+	}
+
+	h3 {
+		color: $color-blue-dark;
+		font-weight: $weight-medium;
+		font-size: 18px;
+	}
+
+	p {
+		font-size: max(1rem, 1vw);
+		font-weight: $weight-regular;
+	}
+}
