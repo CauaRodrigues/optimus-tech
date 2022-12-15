@@ -76,30 +76,10 @@ header {
 			width: auto;
 		}
 
-		button {
-			width: 83px;
-			height: 44px;
-			background-color: transparent;
-			color: $color-text-main;
-			font-weight: $weight-medium;
-			font-size: 1em;
-
-			&:hover {
-				cursor: pointer;
-			}
-		}
-
 		.btn__login {
 			@media (max-width: 780px) {
 				display: none;
 			}
-		}
-
-		.btn {
-			width: 112px;
-			border-radius: 8px;
-			background-color: $color-main;
-			color: $color-base-light;
 		}
 	}
 }
@@ -123,12 +103,6 @@ section.about {
 	gap: 1rem;
 	text-align: center;
 
-	span {
-		color: $color-main;
-		font-weight: $weight-medium;
-		font-size: 1rem;
-	}
-
 	h1 {
 		font-size: min(2.5rem, 5.5vw);
 		font-weight: $weight-semibold;
@@ -146,7 +120,6 @@ section.metrics {
 	width: 90%;
 	padding: 0 24px;
 	margin-bottom: 26px;
-
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
@@ -169,38 +142,108 @@ section.opportunity {
 		flex-direction: column;
 		align-items: center;
 		gap: 1rem;
+		text-align: center;
 
 		span {
 			width: 125px;
 			height: 28px;
-
 			display: flex;
 			align-items: center;
 			justify-content: center;
-
 			background-color: $color-base-main;
 			border-radius: 16px;
-
 			font-size: 0.8em;
-			font-weight: $weight-medium;
-			color: $color-main;
 		}
 
 		h2 {
-			color: $color-blue-dark;
-			text-align: center;
-			font-size: min(2rem, 5.5vw);
+			font-weight: $weight-semibold;
 		}
 
 		p {
 			font-size: min(1rem, 3.5vw);
 			font-weight: $weight-regular;
-			text-align: center;
 		}
 	}
 
 	figure,
 	figure img {
 		width: 80vw;
+	}
+}
+
+section.vagas {
+	min-width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+section.depoimentos {
+	max-width: 80%;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	background-color: $color-base-depoimentos;
+	border-radius: 16px;
+	text-align: center;
+
+	h2 {
+		font-weight: $weight-medium;
+	}
+
+	figure {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			margin: 10px;
+		}
+
+		figcaption {
+			color: $color-blue-dark;
+			font-weight: $weight-medium;
+		}
+
+		span {
+			font-size: 0.9em;
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	padding: 36px 0;
+	background-color: $color-base-footer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+
+	p {
+		font-size: min(1em, 3vw);
+		font-weight: $weight-regular;
+	}
+
+	p:last-of-type {
+		font-size: min(0.9em, 3vw);
+		color: $color-text-gray;
+	}
+
+	form {
+		input {
+			height: 44px;
+			width: 320px;
+			padding: 16px;
+			margin-right: 8px;
+			border-radius: 8px;
+			outline: none;
+		}
 	}
 }
